@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --fig-color-bg: #ffffff;
+  --fig-color-bg-secondary: #f5f5f5;
+  --fig-color-text: #1a1a1a;
+  --fig-color-text-secondary: #888888;
+  --fig-color-border: #e5e5e5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fig-color-bg: #2c2c2c;
+    --fig-color-bg-secondary: #383838;
+    --fig-color-text: #e5e5e5;
+    --fig-color-text-secondary: #888888;
+    --fig-color-border: #444444;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  font-size: 12px;
+  background: var(--fig-color-bg);
+  color: var(--fig-color-text);
+  overflow: hidden;
+}
